@@ -28,13 +28,23 @@ There are plenty of articles and videos on Responsive Design. Here are a few:
 The example you're going to work with is a website that lists various black birds and provides a description of each, to help people learn more about them and their differences.
 
 # What to do
-After cloning this repository and opening it in VSCode, you'll notice two folders. One with some basic code to start with, and another with a completed solution.
+After cloning this repository and opening it in VSCode, you'll notice two folders. One with some basic code to start with, and another with a completed solution. Use these steps to run both of them:
 
-Open up the complete version in the browser. Then open the developer tools (to the console view, so you don't see the CSS), enable the device toolbar with responsive dimensions selected. Now you can resize the view area to different sizes to see how this website should look at different sizes.
+- In terminal, run `serve -l 3000` from the `complete` directory
+- Visit `http://localhost:3000` in your browser
+- Open your `Developer Tools` and choose the `Console` tab.
+- In the top-left of the Developer Tools, click the `Device Toolbar` icon. It looks like a laptop and a mobile phone.
+- Click the `Dimensions` dropdown at the top of the browser view and choose different devices to see how the site looks on each one, or use `Responsive` to freely resize the view.
 
-Next, open the starting version in the browser. You'll need to make changes to the CSS to make this version look and function like the completed one. This will probably be quite difficult. Use the hints below to help walk you through the process.
+After you see how the site looks on different devices, it’s time to make it work on your own. Follow these steps (with a different port number) to get the starter code running while keeping the completed example open
 
+- Open a new terminal window and run `serve -l 3001` from the `start` directory
+- Visit `http://localhost:3001` in a new browser tab
+- Open `Developer Tools` and use `Device Toolbar` just as above.
 
+Now, add styles in `styles.css` in `start` to get the page to work like the completed example. You need to refresh the browser after each change. You can also add styles directly in the browser's `styles` tab (within the `elements` tab), which is a quick and fluid way to explore... but it doesn't change the actual files, and will reset when you refresh the page.
+
+This exercise will probably be very difficult. Try to do it unassisted, but don't expect to be able to get it alone. Use the hints below to help walk you through the process as needed.
 
 # Hints:
 This layout uses a row-direction flexbox inside of a column-direction flexbox.
