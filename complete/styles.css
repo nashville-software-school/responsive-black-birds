@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body,html {
+    height: 100%;
+	line-height: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    padding: 10px;
+}
+h1 {
+    font-size: 3em;
+}
+footer {
+    text-align: center;
+}
+
+
+main, aside {
+    box-sizing: border-box;
+}
+
+#bird-list {
+    width: 120px;
+    background: #bdb091;
+}
+#bird-list li {
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    background: #cccccc;
+    box-shadow: inset 0 0 3px black;
+}
+
+#bird-image {
+    background-image: url(blackbirds.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 20px black;
+    width: 250px;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+main {
+    background: black;
+    color: white;
+    flex: 4;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    #bird-image {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .content {
+        flex-wrap:wrap
+    }
+
+    #bird-list {
+        flex: 1 0 50%; 
+        order: 1;
+    }
+
+    #bird-image {
+        flex: 1 0 50%; 
+        order: 2;
+        display: block;
+    }
+
+    main {
+        flex: 2 0 100%;
+        order: 3;
+    }
+}
